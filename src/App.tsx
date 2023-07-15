@@ -1,24 +1,39 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import { DndProvider } from "react-dnd";
+import { HTML5Backend } from "react-dnd-html5-backend";
+import CustomDragLayer from "./Tab/CustomDragLayer";
+import DragableTabContainer from "./Tab/DragableTabContainer";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header>
+        <ul>
+          <li>
+            <a href="#home">Home</a>
+          </li>
+          <li>
+            <a href="#home">Products</a>
+          </li>
+          <li>
+            <a href="#home">Services</a>
+          </li>
+          <li>
+            <a href="#home">About</a>
+          </li>
+          <li>
+            <a href="#home">Contact</a>
+          </li>
+        </ul>
       </header>
+
+      <nav className="Tab-nav">
+        <DndProvider backend={HTML5Backend}>
+          <DragableTabContainer />
+          <CustomDragLayer />
+        </DndProvider>
+      </nav>
     </div>
   );
 }
