@@ -8,13 +8,13 @@ Repo on 'Constrain React DnD to the horizontal axis' article
 git clone https://github.com/badasukerubin/react-dnd-horizontal.git
 ```
 
-2. Enter the project folder
+2. Enter the project directory
 
 ```
 cd react-dnd-horizontal
 ```
 
-3. Install Rwact(Typescript) dependencies and packages
+3. Install React(Typescript) dependencies and packages
 
 ```
 npm install
