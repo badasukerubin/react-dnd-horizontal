@@ -43,7 +43,6 @@ export default memo(function DragableTab({
       if (dragIndex < hoverIndex && hoverClientX < hoverMiddleX) {
         return;
       }
-      console.log(2);
 
       // Skip if dragged to the right half of the hovered tab
       if (dragIndex > hoverIndex && hoverClientX > hoverMiddleX) {
