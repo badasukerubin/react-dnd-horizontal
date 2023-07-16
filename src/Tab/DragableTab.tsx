@@ -31,12 +31,12 @@ export default memo(function DragableTab({
       const hoverBoundingRect = (
         ref.current as HTMLDivElement
       ).getBoundingClientRect();
-      // Vertical middle of the hovered tab
+      // Horizontal middle of the hovered tab
       const hoverMiddleX =
         (hoverBoundingRect.left - hoverBoundingRect.right) / 2;
       // Current mouse position
       const clientOffset = monitor.getClientOffset();
-      // Vertical offset of the mouse relative to the hovered tab
+      // Horizontal offset of the mouse relative to the hovered tab
       const hoverClientX =
         (clientOffset as XYCoord).x - hoverBoundingRect.right;
       // Skip if dragged back to the dragged tab's original position
