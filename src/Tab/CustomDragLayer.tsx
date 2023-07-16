@@ -54,10 +54,7 @@ export default function CustomDragLayer() {
 
   return (
     <div style={layerStyles}>
-      <div
-        className={`flex h-max`}
-        style={getItemStyles(initialOffset, currentOffset)}
-      >
+      <div style={getItemStyles(initialOffset, currentOffset)}>
         <Tab tab={tab} />
       </div>
     </div>
