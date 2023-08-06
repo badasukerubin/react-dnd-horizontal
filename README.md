@@ -1,6 +1,6 @@
 # react-dnd-horizontal
 
-Repo on 'Constrain React DnD to the horizontal axis' article
+Repo for the article [Constrain React DnD to the horizontal axis](https://toluwaniadewale.com/blog/constrain-react-dnd-to-the-horizontal-axis)
 
 1. Clone the repo
 
